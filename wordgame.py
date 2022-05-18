@@ -1,7 +1,3 @@
-# Programming Project C || Python Development || CS 3270 || Brian Durney
-# SueAnn Van Valkenburg
-# 2/20/22
-
 import random
 import re
 
@@ -58,16 +54,14 @@ for aList in wordsLenList:
         
         if wordList == randWordList: 
             wordSameLetters[i].append(temp)
-print('wordList: ', wordSameLetters)
+#print('wordList: ', wordSameLetters)
                 
-        #if word.startswith(randWordFirstList) == True:
-            #wordsSameStart[i].append(word)
 
 #alphabetize sublists
 for aList in wordSameLetters:
     aList.sort()
 
-print(wordSameLetters)
+#print(wordSameLetters)
 
     
 def findWordToGuess():
@@ -158,17 +152,6 @@ def updateDisplay(ud_wordToGuessAndIndex):
         printDisplay(displayList, wordSameLetters) #should display edited list
 
 def checkGuess(guess, wordToGuessAndIndex):
-        #print('WSL: ', wordSameLetters)
-        #guess can match any guess in list 
-        #cg_wordToGuessAndIndex = wordToGuessAndIndex
-        #flatCGWordToGuess = [item for sublist in cg_wordToGuessAndIndex for item in sublist]
-        #print('flatList: ', flatCGWordToGuess)
-        #print(cg_wordToGuessAndIndex )
-        #nestedIndex = wordToGuessAndIndex[1]
-        #firstIndex = nestedIndex[0]
-        #secondIndex = nestedIndex[1]
-        #correctWord = wordSameLetters[firstIndex][secondIndex]
-        #print('correct Word: ', correctWord)
         if guess in guessedWords:
                 print("You've already guessed that. Try again.")
                 guess = input("\nEnter a guess: ")
